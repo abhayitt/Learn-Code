@@ -67,15 +67,6 @@ abstract class Human {
         return nationality;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setAge(int age) {
-        if (age >= 0) {
-            this.age = age;
-        }
-    }
 
     // Abstract methods representing actions of the human
     public abstract void walk();
