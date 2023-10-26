@@ -83,11 +83,11 @@ abstract class Human {
     public abstract void talk();
 }
 
-// Inheritance: Create a subclass of Human (e.g., Doctor)
-class Doctor extends Human {
+// Inheritance: Create a subclass of Human (e.g., Engineer)
+class Engineer extends Human {
     private String specialization;
 
-    public Doctor(String name, int age, String gender, String skinColor, String eyeColor,
+    public Engineer(String name, int age, String gender, String skinColor, String eyeColor,
                   double height, double weight, String hairColor, String bloodType, String nationality,
                   String specialization) {
         super(name, age, gender, skinColor, eyeColor, height, weight, hairColor, bloodType, nationality);
@@ -96,16 +96,16 @@ class Doctor extends Human {
 
     @Override
     public void walk() {
-        System.out.println("The doctor is walking.");
+        System.out.println("The Engineer is walking.");
     }
 
     @Override
     public void talk() {
-        System.out.println("The doctor is talking.");
+        System.out.println("The Engineer is talking.");
     }
 
-    public void diagnose() {
-        System.out.println("The doctor is diagnosing patients.");
+    public void ability() {
+        System.out.println("The Engineer is problem solver.");
     }
 
     // Getter for specialization
@@ -116,11 +116,11 @@ class Doctor extends Human {
 
 public class Main {
     public static void main(String[] args) {
-        Doctor doctor = new Doctor("Dr. Smith", 40, "Male", "Fair", "Blue", 6.0, 175, "Brown", "A+", "American", "Cardiologist");
-        System.out.println("Doctor's Name: " + doctor.getName());
-        System.out.println("Specialization: " + doctor.getSpecialization());
-        doctor.walk();
-        doctor.talk();
-        doctor.diagnose();
+        Engineer engineer = new Engineer("Er. abhay", 23, "Male", "Fair", "Black", 5.6, 70, "Black", "O+", "Indian", "Devops");
+        System.out.println("Engineer Name: " + engineer.getName());
+        System.out.println("Specialization: " + engineer.getSpecialization());
+        engineer.walk();
+        engineer.talk();
+        engineer.ability();
     }
 }
