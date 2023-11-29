@@ -26,7 +26,7 @@ abstract class Human {
         this.nationality = nationality;
     }
 
-    // Encapsulation: Use getters and setters to access and modify properties
+    // Encapsulation: Use getters to access  properties
     public String getName() {
         return name;
     }
