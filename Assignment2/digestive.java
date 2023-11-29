@@ -36,7 +36,6 @@ class Esophagus extends DigestiveSystem implements Eater {
 
 class Stomach extends DigestiveSystem implements Eater {
     private boolean isHungry;
-
     // Constructor to initialize properties
     public Stomach() {
         super(); // Call the constructor of the base class

@@ -67,7 +67,6 @@ abstract class Human {
         return nationality;
     }
 
-
     // Abstract methods representing actions of the human
     public abstract void walk();
 
