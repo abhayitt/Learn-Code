@@ -13,6 +13,7 @@ public class Kaprekar {
 
         return digits;
     }
+    
 
     public static int convertAscending(int number) {
         // Convert number----->array of digits
